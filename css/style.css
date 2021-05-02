@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  background-color: #e5eff5;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 0;
+  margin-top: 30px;
+  width: 100%;
+  background-color: #c0df34;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(1, 1, 1, 0.2);
+}
+
+.container {
+  margin: 50px auto;
+  width: 85vw;
+  max-width: 335px;
+  box-shadow: 0px 5px 20px rgba(1, 1, 1, 0.2);
+  border-radius: 5px;
+}
+.container .join,
+.container .subscription,
+.container .why {
+  padding: 25px;
+}
+.container .join {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+.container .join h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2ab2af;
+}
+.container .join h2 {
+  color: #c0df34;
+  margin-top: 20px;
+}
+.container .join p {
+  line-height: 2;
+  margin-top: 20px;
+  color: #98a6bd;
+}
+.container .subscription {
+  background-color: #2ab2af;
+  color: #fff;
+}
+.container .subscription .price {
+  margin-top: 20px;
+}
+.container .subscription .price span {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container .subscription .price span span {
+  font-size: 30px;
+  padding-right: 10px;
+  color: #fff;
+}
+.container .subscription p {
+  margin-top: 10px;
+}
+.container .subscription a {
+  text-decoration: none;
+  color: #fff;
+}
+.container .subscription a:visited {
+  color: #fff;
+}
+.container .why {
+  background-color: #3dd1cf;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+.container .why h2 {
+  margin-bottom: 20px;
+}
+.container .why li {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 50px 25px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .join {
+    width: 100%;
+  }
+  .container .subscription,
+.container .why {
+    flex: 1;
+  }
+  .container .subscription {
+    border-radius: 0 0 0 5px;
+  }
+  .container .why {
+    border-radius: 0 0 5px 0;
+  }
+}
+@media (min-width: 600px) and (max-height: 600px) and (orientation: landscape) {
+  body {
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
